@@ -1,0 +1,797 @@
+/***********
+サブページ用
+************/
+
+header{
+    width: 1200px;
+    margin:0 auto;
+    background-color: #fdfdfd;
+}
+
+body{
+    background-color: #f3f3f3;
+    font-family: Noto Sans CJK JP;
+    color: #1d3564;
+}
+
+.rapper{
+    width: 1200px;
+    margin:10px auto;
+    text-align: center;
+    background-color: #fdfdfd;
+}
+
+.subpage-flex{
+    display: flex;
+}
+.pc-img{display: inline-block;}
+.sp-img{display: none;}
+
+/*
+共通事項
+*/
+
+.flex{
+    display: flex;
+}
+
+.red{
+    color:#fd80aa;
+    font-weight: bold;
+}
+.pink{
+    color:#eb6876;
+}
+.blue{
+    color:rgb(57, 57, 248);
+    font-weight: bold;
+}
+
+.orange{
+    color:orange;
+    font-weight: bold;
+}
+.orange_box{
+    color:orange;
+    border: 2px solid orange!important;
+}
+.gray{
+    color: #707070;
+}
+.gray_box{
+    color: #707070;
+    border: 2px solid #707070!important;
+    text-decoration: line-through;
+}
+
+p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.text-center{
+    align-items: center;
+    text-align: center;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.koushiki {
+    color: #fdfdfd;
+    background-color: #dd1532;
+    border-bottom: 5px solid #b51029;
+    padding: 0.5rem 0.2rem;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+a.koushiki:hover {
+    margin-top: 4px;
+    border-bottom: 1px solid rgb(201, 80, 0);
+}
+
+a.wordOfMouth {
+    color: #fdfdfd;
+    background: -moz-linear-gradient(top, #ccc 50%, #aaa 50%);
+    background: -webkit-linear-gradient(top, #ccc 50%, #aaa 50%);
+    background: linear-gradient(to bottom, #ccc 50%, #aaa 50%);
+    border-bottom: 5px solid #999999;
+    width: 20%;
+    font-size: 1rem;
+    padding: 1.3rem 1rem;
+}
+
+a.wordOfMouth:hover {
+    margin-top: 4px;
+    border-bottom: 1px solid #999999;
+}
+
+a.official {
+    color: #fdfdfd;
+    background-color: rgb(255, 111, 0);
+    border-bottom: 5px solid rgb(201, 80, 0);
+    width: 40%;
+}
+
+a.official:hover {
+    margin-top: 4px;
+    border-bottom: 1px solid rgb(201, 80, 0);
+}
+
+.section{
+    background-color:#fdfdfd;
+    padding:5px 20px;
+}
+
+.section_catch_message{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    justify-content: center;
+    text-align: left;
+    line-height: 1.5;
+    padding: 20px;
+    font-size: 1rem;
+    background-color: #f1f1f1;
+}
+
+.section_catch_message:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-left: 15px solid #f1f1f1;
+  }
+
+  .section_catch_message_r{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    justify-content: center;
+    text-align: left;
+    line-height: 1.5;
+    padding: 20px;
+    font-size: 1rem;
+    background-color: #f1f1f1;
+}
+
+.section_catch_message_r:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #f1f1f1;
+  }
+
+/***********************************/
+.cp-header01{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 40px;
+}
+.cp-header01__items{
+    display: flex;
+    list-style: none;
+    align-items: flex-end;
+    text-align: center;
+}
+.cp-header01__item:not(:last-child) {
+    margin-right: 25px;
+}
+.cp-header01__item a {
+    display: inline-block;
+    text-decoration: none;
+}
+.cp-header01__item p {
+    font-size: 0.7rem;
+    color: #ccc;
+}
+.cp-header01__item_icon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.cp-header01__item_icon p{
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 7px;
+    color: #765131;
+}
+
+.search_area{
+    display:flex;
+    width: 1060px;
+    height: 578px;
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: #fdfdfd;
+    background-image: url(../img/topimg.jpg);
+    background-repeat: no-repeat;
+}
+
+.searchFormTable{
+    margin-top: 130px;
+    margin-left: 110px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+table{
+    max-width: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table_column{
+    display: flex;
+}
+th,td{
+    display : block;
+    border: solid 1px #fad4df;;
+    padding:10px 5px;
+}
+
+select{
+    padding: 3px;
+}
+
+.feas_clevel_01[checked]{
+    background: red;
+}
+
+th{
+    width: 170px;
+    color: #fdfdfd;
+}
+
+td{
+    width: 180px;
+}
+
+table th:nth-of-type(2n+1){
+    background-color: #fd80aa;
+}
+table p{
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.submit{
+    width: 362px;
+    height: 45px;
+}
+
+input[type=submit], #bbp_reply_submit, .bp-login-widget-register-link a {
+    background: #3fca3a linear-gradient(to bottom,#58ca54,#29be22 1px,#29be22 50%,#05a800 50%,#3fca3a) !important;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 350px;
+}
+
+input{
+    appearance: none;
+    padding: 6px 6px 10px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+/* 共通 ------------------------------*/
+*[class*="cp-"],
+*[class*="cp-"] * {
+    box-sizing: border-box;
+}
+
+/* テキスト */
+.cp-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #707070;
+}
+* + .cp-text {
+    margin: 16px 0 0 0;
+}
+
+/* タブ切り替え ------------------------------*/
+/* タブ */
+.cp-tab01 {
+    background: #f3f3f3;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.cp-tab-box{
+    padding: 35px 20px 54px;
+    border-bottom: 8px solid #006EC5;
+    padding-left: 2%;
+    padding-right: 2%;
+    background:repeating-linear-gradient(
+        90deg,
+        #5bb9f9,
+        #5bb9f9 10px,
+        #3eacf7 11px,
+        #3eacf7 20px
+    );
+}
+
+.cp-tab01__item {
+    display: block;
+    width: calc(97% / 3);
+    padding: 16px 8px;
+    border: 2px solid #006EC5;
+    border-top-right-radius: 22px;
+    -webkit-border-top-right-radius: 22px;
+    -moz-border-radius-topright: 22px;
+    margin: 0 -2px 0 0; 
+    color: #006EC5;
+    background: #fdfdfd;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.cp-tab01__item:not(:last-of-type) {
+    border-right: 2px solid #006EC5;
+}
+.cp-tab01 input:checked + .cp-tab01__item {
+    position: relative;
+    color: #fff;
+    background: #006EC5;
+    font-size: 1.4rem;
+    width: 34%;
+    padding: 20px 11px;
+    bottom: 11px;
+}
+.cp-tab01 input:checked + .cp-tab01__item:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 11px;
+    left: 0;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: #fdfdfd transparent transparent transparent;
+}
+input[name="cp-tab01__item"] {
+    display: none;
+}
+
+/* コンテンツ */
+#s0,#s1,#s2{
+    display: none;
+}
+.cp-tab01__content {
+    clear: both;
+    padding: 32px 24px 24px;
+    overflow: hidden;
+}
+
+.cp-tab01__table table{
+    width:100%;
+    margin-top: 10px;
+}
+
+.cp-tab01__table th,
+.cp-tab01__table td{
+    width: 20%;
+    display: revert;
+    vertical-align: middle;
+    background-color: #f0d4d8;
+}
+
+.cp-tab01__table td{
+    background-color: #fdfdfd;
+}
+
+.cp-tab01__table p{
+    font-size: 1.1rem;
+    line-height: 1.3;
+    padding: 0 15px;
+}
+
+.cp-tab01__table img{
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 599px) {
+    .cp-tab01__content {
+        padding: 24px 16px 16px;
+    }
+}
+/*セクション3
+看護師転職サイト、利用しないと不利ってホント？
+*/
+
+.section3{
+    background-color:#fdfdfd;
+    padding:80px 100px;
+}
+
+.section3_title_catch{
+    margin: 30px 20px;
+    align-items: center;
+}
+.section3_icon{
+    width: 20%;
+}
+
+.section3_catch_message{
+    width: 70%;
+    justify-content: center;
+    text-align: left;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.section3_value{
+    display:flex;
+    justify-content:space-between;
+    padding: 30px 20px;
+}
+
+.section3_leftbox{
+    width: 60%;
+}
+.section3_rightbox{
+    width: 40%;
+}
+
+.leftbox_title{
+    line-height: 1.5;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-left: 6px solid #dd1532;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.leftbox_text{
+    text-align: left;
+}
+
+.point{
+    padding: 10px;
+    background-color: #fff9eb;
+}
+.point-title{
+    padding: 7px;
+    width: 80px;
+    background-color: orange;
+    color: #fdfdfd;
+}
+.point-box{
+    padding: 10px 50px;
+}
+.point-box h2{
+    padding: 10px;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.point-box p{
+    font-size: 1.55rem;
+    text-align: left;
+}
+
+/*セクション4
+看護師転職サイトランキングベスト５
+*/
+
+
+.section4{
+    background-color:#fdfdfd;
+    padding:80px 100px;
+}
+
+.section_title_catch{
+    margin: 30px 60px;
+    align-items: center;
+    justify-content: center;
+}
+.section_icon_r{
+    height: 100px;
+    margin-left: 20px;
+}
+.section_icon_l{
+    height: 100px;
+    margin-right: 20px;
+}
+
+/*
+サーチボックス
+*/
+.search_valueBox{
+    padding:25px;
+    border: 5px solid #fad4df;
+}
+
+.search_valueBox_1stTitle{
+    text-align: left;
+    border-bottom: 1px dotted #fad4df;
+    font-size: 1.8rem;
+    padding-bottom: 8px;
+}
+
+.search_valueBox_2ndtitle{
+    margin: 5px 0;
+    font-size: 2rem;
+    text-align: center;
+    align-items: flex-end;
+}
+.search_valueBox_2ndtitle>img:last-of-type{
+    margin-left: auto;
+}
+.valueBox_1stValue_img{
+    width: 40%;
+}
+
+.valueBox_1stValue_box{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 75%;
+}
+
+.valueBox_1stValue_list{
+    list-style:initial;
+    text-align: left;
+    padding-left: 28px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #707070;
+}
+
+.valueBox_ranking_table table{
+    width:100%;
+    margin-top: 10px;
+}
+
+.valueBox_ranking_table table th{
+    background: #fd80aa;
+}
+
+.valueBox_ranking_table table th,
+.valueBox_ranking_table table td{
+    width: 25%;
+    display: revert;
+}
+.valueBox_ranking_table_sp{
+    display: none;
+}
+
+.search_valueBox_2ndValue{
+    align-items: center;
+    font-size: 1.2rem;
+}
+.search_valueBox_2ndValue div{
+    border: 2px solid #707070;
+    margin: 2px;
+    padding: 3px;
+}
+
+/*******************/
+
+.section4,
+.section5,
+.section6,
+.section7,
+.section8{
+    background-color:#fdfdfd;
+    padding:80px 100px;
+}
+
+.boxTitle{
+    padding:20px;
+    border: 5px solid #fad4df;
+    border-left: unset;
+    border-right: unset;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.boxTitle_sub{
+    margin: 20px 40px;
+    padding:20px;
+    border: 2px solid #fad4df;
+    border-left: unset;
+    border-right: unset;
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.boxTitle_sub p{
+    margin-left: 10px;
+    text-align: left;
+    color: #777;
+}
+
+.check-title{
+    background-color: #eb6876;
+    color: #fdfdfd;
+    padding: 5px;
+    padding-top: 7px;
+    font-size: 1.2rem;
+}
+
+
+.title{
+    line-height: 1.5;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    border-left: 8px solid #dd1532;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.section5_img{
+    width: 90%;
+    margin:30px;
+
+}
+.section5_text{
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.manzokusearch_valueBox_1stTitle{
+    text-align: left;
+    border-top: 1px solid #dd1532;
+    border-bottom: 1px dotted #dd1532;
+    font-size: 1.8rem;
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+
+.itiran_text{
+    margin: 20px;
+}
+
+
+.sideBox{
+    padding:5px 10px;
+    margin: 0 5px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: #fdfdfd;
+    border: 1px solid#eee;
+    box-shadow: 1px 2px 1px #ddd;
+}
+
+.sideBox_title{
+    font-size: 0.9rem;
+    color: #fdfdfd;
+    background-color: #eb6876;
+    padding: 7px;
+    margin: 0 5px;
+    text-align: left;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+.sideBox_icon{
+    width: 50px;
+}
+.sideBox_text{
+    width: 60%;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.sideBox_text h5{
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+.sideBox_text p{
+    font-size: 0.8rem;
+}
+footer{
+    padding: 30px;
+    background: linear-gradient(to right top, #f89ebc 0%, #fd80aa 100%);
+}
+footer p{
+    color:#fff;
+    font-size: 1rem;
+}
+.footer_link a{
+    color:#fff;
+    padding: 0 5px;
+    border-right: 1px solid #fff;
+}
+
+.footer_link a:first-of-type{
+    border-left: 1px solid #fff;
+}
+
+.footer_link{
+    margin-bottom: 15px;
+}
+
+/*右側メニュー*/
+
+.right-nav {
+    margin: 0;
+    width: 250px;
+}
+.nav_img{
+    width: 100%;
+}
+
+.nav-icon{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.sp-icon{
+    display: none;/*スマホ用*/
+}
+
+.nav-icon_sub{
+    height: 30px;
+}
+
+.nav-text{
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-text_sub{
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.nav-block{
+    padding: 10px 0;
+    line-height: 1.3;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-block_sub{
+    padding:20px 30px;
+    line-height: 1.3;
+    font-weight: bold;
+    align-items: center;
+}

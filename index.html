@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--SEO対策-->
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!--液晶画面最適化-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <!--ファビコン-->
+  <link rel="icon" href="img/favicon.ico" id="favicon">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png">
+
+  <!--cssファイル読み込み-->
+  <link rel="stylesheet" type="text/css" href="css/resetcss.css"><!--リセットCSS-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/class-tablet.css"><!--タブレット用SS-->
+  <link rel="stylesheet" type="text/css" href="css/class-phones.css"><!--スマホ用SS-->
+
+  <title>看護師サイト</title>
+</head>
+<header class="cp-header01">
+  <div class="cp-header01__logo">
+    <a class="cp-header01__logo_box flex" href="/kangoshi">
+      <img class="header01__logo_img" src="img/logo1.png" alt="ロゴマーク">
+      <div class="header01__logo_text">
+       <span>看護師を辞めたい看護師が選んだ</span>
+       <p>看護師転職サイト</p>
+      </div>
+    </a>
+  </div>
+  <div class="cp-header01__container">
+      <!-- ナビゲーション -->
+      <nav class="cp-header01__navi">
+          <ul class="cp-header01__items flex">
+              <li class="cp-header01__item">
+                <a href="/kangoshi">
+                  <div class="cp-header01__item_icon">
+                    <img class="pc-img" src="img/Home.jpg" alt="ホームマーク">
+                    <p>ホーム</p>
+                  </div>
+                  <p>HOME</p>
+                </a>
+              </li>
+              <li class="cp-header01__item">
+                <a href="#ranking">
+                  <div class="cp-header01__item_icon">
+                    <img class="pc-img" src="img/oukan1.jpg" alt="王冠マーク">
+                    <p>ランキング</p>
+                  </div>
+                  <p>ranking</p>
+                </a>
+              </li>
+              <li class="cp-header01__item">
+                <a href="#job_ranking">
+                  <div class="cp-header01__item_icon">
+                    <img class="pc-img" src="img/bill.jpg" alt="建物のマーク">
+                    <p>職業別で探す</p>
+                  </div>
+                  <p>Choice</p>
+                </a>
+              </li>
+          </ul>
+      </nav>
+    </div>
+      <!-- /ナビゲーション -->
+      <!-- スマホ ナビゲーション -->
+    <div class="cp-header02__container" id="contact_bottombtn_link">
+      <nav class="cp-header02__navi" >
+          <ul class="cp-header01__items flex">
+              <li class="cp-header01__item">
+                <a href="/kangoshi">
+                  <div class="cp-header01__item_icon">
+                    <img class="sp-img" src="img/Home_sp.png" alt="ホームマーク">
+                    <p>ホーム</p>
+                  </div>
+                  <p>HOME</p>
+                </a>
+              </li>
+              <li class="cp-header01__item">
+                <a href="#ranking">
+                  <div class="cp-header01__item_icon">
+                    <img class="sp-img" src="img/oukan_sp.png" alt="王冠マーク">
+                    <p>ランキング</p>
+                  </div>
+                  <p>ranking</p>
+                </a>
+              </li>
+              <li class="cp-header01__item">
+                <a href="#job_ranking">
+                  <div class="cp-header01__item_icon">
+                    <img class="sp-img" src="img/bill_sp.png" alt="建物のマーク">
+                    <p>職業別で探す</p>
+                  </div>
+                  <p>Choice</p>
+                </a>
+              </li>
+          </ul>
+      </nav><!-- /ナビゲーション -->
+  </div>
+</header>
+<body>
+  <div class="rapper">
+    <section class="search_area">
+      <div class="search_area_cover">
+        <div class="search_area_left">
+          <div class="topbanner">
+            <img class="sp-top1" src="img/top_sp_01.png" alt="topbanner1">
+            <img class="sp-top2" src="img/top_sp_02.png" alt="topbanner2">
+          </div>
+          <form id="feas-searchform-0" action="" method="post" name="form1">
+            <table class="searchFormTable">
+              <tbody>
+                <tr class="table_column">
+                  <th><p>希望エリアは？</p></th>
+                  <td class="still1 btn-1">
+                    <select name="area" id="feas_0_0" class="selecting aru">
+                      <option value="" hidden>--選択して下さい--</option>
+                      <option value="0" class="feas_clevel_01">指定なし</option>
+                      <option value="1" class="feas_clevel_01">北海道</option>
+                      <option value="2" class="feas_clevel_01">東北</option>
+                      <option value="3" class="feas_clevel_01">関東</option>
+                      <option value="4" class="feas_clevel_01">中部</option>
+                      <option value="5" class="feas_clevel_01">近畿</option>
+                      <option value="6" class="feas_clevel_01">中国</option>
+                      <option value="7" class="feas_clevel_01">四国</option>
+                      <option value="8" class="feas_clevel_01">九州</option>
+                     </select>
+                   </td>
+                </tr>
+                <tr class="table_column">
+                  <th><p>希望職種は？</p></th>
+                  <td class="still2 btn-2">
+                    <select name="job" id="feas_0_1" class="aru">
+                      <option value="" hidden>--選択して下さい--</option>
+                      <option value="10" class="feas_clevel_01">拘らない</option>
+                      <option value="11" class="feas_clevel_01">正看護師</option>
+                      <option value="12" class="feas_clevel_01">准看護師</option>
+                      <option value="13" class="feas_clevel_01">助産師</option>
+                      <option value="14" class="feas_clevel_01">保健師</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class="table_column">
+                  <th><p>雇用形態は？</p></th>
+                  <td class="still3 btn-3">
+                    <select name="Employment" id="feas_0_2" class="aru">
+                      <option value="" hidden>--選択して下さい--</option>
+                      <option value="20" class="feas_clevel_01">拘らない</option>
+                      <option value="21" class="feas_clevel_01">夜勤</option>
+                      <option value="22" class="feas_clevel_01">日勤</option>
+                      <option value="23" class="feas_clevel_01">その他</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class="table_column">
+                  <th><p>就業施設</p></th>
+                  <td class="still4 btn-4">
+                    <select name="facility" id="feas_0_3" class="last-select">
+                      <option value="" hidden>--選択して下さい--</option>
+                      <option value="30" class="feas_clevel_01">拘らない</option>
+                      <option value="31" class="feas_clevel_01">病院</option>
+                      <option value="32" class="feas_clevel_01">クリニック</option>
+                      <option value="33" class="feas_clevel_01">介護施設</option>
+                      <option value="34" class="feas_clevel_01">その他</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class="table_column">
+                  <th><p>拘り検索</p></th>
+                  <td class="still5 btn-5">
+                    <select name="Commitment" id="feas_0_5">
+                      <option value="" hidden>--選択して下さい--</option>
+                      <option value="40" class="feas_clevel_01">拘らない</option>
+                      <option value="41" class="feas_clevel_01">非公開求人あり</option>
+                      <option value="42" class="feas_clevel_01">お祝い金あり</option>
+                      <option value="43" class="feas_clevel_01">休日対応あり</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class="submitBox">
+                  <td class="submit" colspan="2">
+                     <input type="submit" name="searchbutton" id="feas-submit-button-0" class="feas-submit-button" value="条件を選択して下さい" onclick="searchclick()">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="cp-tab01">
+          <!-- タブ -->
+          <div class="cp-tab-box">
+            <input id="cp-tab1" type="radio" name="cp-tab01__item" onclick="clickBtn()" checked>
+            <label class="cp-tab01__item" for="cp-tab1">総合</label>
+            <input id="cp-tab2" type="radio" name="cp-tab01__item" onclick="clickBtn()">
+            <label class="cp-tab01__item" for="cp-tab2">取り扱い求人</label>
+            <input id="cp-tab3" type="radio" name="cp-tab01__item" onclick="clickBtn()">
+            <label class="cp-tab01__item" for="cp-tab3">サービス内容</label><!-- /タブ -->
+          </div>
+          <div>
+            <!-- 総合タブ -->
+            <div class="cp-tab01__content" id="s0">
+              <table class="cp-tab01__table">
+                <tr>
+                  <th>転職サイト名</th><th>オススメ度</th><th>求人数</th><th>特徴</th><th>公式サイト</th>
+                </tr>
+                <!-- 総合タブ1-1 -->
+                <tr>
+                  <td>
+                    <img class="cp-tab01__table_logo_img" src="img/banner_kangorool.jpg" />
+                    <a href="https://www.kango-roo.com/">看護roo!</a>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_hyouka_img" src="img/hoshi4.5.jpg" />
+                    <p>4.3</p>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_kyuuzin_img" src="img/maru.jpg" />
+                    <p>80,000</p>
+                  </td>
+                  <td>
+                    <P><strong>満足度No.1！</strong><br>あなたに合った求人が見つかる</P>
+                  </td>
+                  <td>
+                    <p><span>常勤のみ</span></p>
+                    <a href="https://www.kango-roo.com/" class="btn koushiki">公式</a>
+                  </td>
+                </tr>
+                <!-- 総合タブ1-2 -->
+                <tr>
+                  <td>
+                    <img class="cp-tab01__table_logo_img" src="img/banner_kangonoshigoto.jpg" />
+                    <a href="https://kango-oshigoto.jp/">看護のお仕事</a>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_hyouka_img" src="img/hoshi4.5.jpg" />
+                    <p>4.3</p>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_kyuuzin_img" src="img/maru.jpg" />
+                    <p>120,000</p>
+                  </td>
+                  <td>
+                    <P>登録者限定の<strong>非公開求人数がトップクラス</strong></P>
+                  </td>
+                  <td>
+                    <p><span>常勤のみ</span></p>
+                    <a href="https://kango-oshigoto.jp/" class="btn koushiki">公式</a>
+                  </td>
+                </tr>
+                <!-- 総合タブ1-3 -->
+                <tr>
+                  <td>
+                    <img class="cp-tab01__table_logo_img" src="img/banner_nursezinzai.jpg" />
+                    <a href="https://www.nursejinzaibank.com/">ナース人材バンク</a>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_hyouka_img" src="img/hoshi4.5.jpg" />
+                    <p>3.8</p>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_kyuuzin_img" src="img/maru.jpg" />
+                    <p>210,000</p>
+                  </td>
+                  <td>
+                    <P>常勤求人数No.1！<strong>すぐに転職したい</strong>方に</P>
+                  </td>
+                  <td>
+                    <p><span>常勤のみ</span></p>
+                    <a href="https://www.nursejinzaibank.com/" class="btn koushiki">公式</a>
+                  </td>
+                </tr>
+                <!-- 総合タブ1-4 -->
+                <tr>
+                  <td>
+                    <img class="cp-tab01__table_logo_img" src="img/banner_iryouworker.jpg" />
+                    <a href="https://iryouworker.com/">医療ワーカー</a>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_hyouka_img" src="img/hoshi4.5.jpg" />
+                    <p>3.5</p>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_kyuuzin_img" src="img/maru.jpg" />
+                    <p>60,000</p>
+                  </td>
+                  <td>
+                    <P><strong>年度内職</strong>のおすすめ求人多数</P>
+                  </td>
+                  <td>
+                    <a href="https://iryouworker.com/" class="btn koushiki">公式</a>
+                  </td>
+                </tr>
+              </table>
+           </div>
+          <!-- 取り扱い求人タブ -->
+            <div class="cp-tab01__content" id="s1">
+               <p class="cp-text">取り扱い求人タブ</p>
+                <table class="cp-tab01__table">
+                  <tr>
+                    <th>転職サイト名</th><th>オススメ度</th><th>求人数</th><th>特徴</th><th>公式サイト</th>
+                  </tr>
+                  <!-- 取り扱い求人タブ1-1 -->
+                  <tr>
+                    <td>
+                      <img class="cp-tab01__table_logo_img" src="img/banner_kangorool.jpg" />
+                      <a href="https://www.kango-roo.com/">看護roo!</a>
+                    </td>
+                    <td>
+                      <img class="cp-tab01__table_hyouka_img" src="img/hoshi4.5.jpg" />
+                      <p>4.3</p>
+                    </td>
+                    <td>
+                      <img class="cp-tab01__table_kyuuzin_img" src="img/maru.jpg" />
+                      <p>80,000</p>
+                    </td>
+                    <td>
+                      <P><strong>満足度No.1！</strong><br>あなたに合った求人が見つかる</P>
+                    </td>
+                    <td>
+                      <p><span>常勤のみ</span></p>
+                      <a href="https://www.kango-roo.com/" class="btn koushiki">公式</a>
+                    </td>
+                  </tr>
+                  <!-- 取り扱い求人タブ1-2 -->
+                  <tr>
+                    <td>
+                      <img class="cp-tab01__table_logo_img" src="img/banner_kangonoshigoto.jpg" />
+                      <a href="https://kango-oshigoto.jp/">看護のお仕事</a>
+                    </td>
+                    <td>
+                      <img class="cp-tab01__table_hyouka_img" src="img/hoshi4.5.jpg" />
+                      <p>4.3</p>
+                    </td>
+                    <td>
+                      <img class="cp-tab01__table_kyuuzin_img" src="img/maru.jpg" />
+                      <p>120,000</p>
+                    </td>
+                    <td>
+                      <P>登録者限定の<strong>非公開求人数がトップクラス</strong></P>
+                    </td>
+                    <td>
+                      <p><span>常勤のみ</span></p>
+                      <a href="https://kango-oshigoto.jp/" class="btn koushiki">公式</a>
+                    </td>
+                  </tr>
+                  <!-- 取り扱い求人タブ1-3 -->
+                  <tr>
+                    <td>
+                      <img class="cp-tab01__table_logo_img" src="img/banner_nursezinzai.jpg" />
+                      <a href="https://www.nursejinzaibank.com/">ナース人材バンク</a>
+                    </td>
+                    <td>
+                      <img class="cp-tab01__table_hyouka_img" src="img/hoshi4.5.jpg" />
+                      <p>3.8</p>
+                    </td>
+                    <td>
+                      <img class="cp-tab01__table_kyuuzin_img" src="img/maru.jpg" />
+                      <p>210,000</p>
+                    </td>
+                    <td>
+                      <P>常勤求人数No.1！<strong>すぐに転職したい</strong>方に</P>
+                    </td>
+                    <td>
+                      <p><span>常勤のみ</span></p>
+                      <a href="https://www.nursejinzaibank.com/" class="btn koushiki">公式</a>
+                    </td>
+                  </tr>
+                  <!-- 取り扱い求人タブ1-4 -->
+                  <tr>
+                    <td>
+                      <img class="cp-tab01__table_logo_img" src="img/banner_iryouworker.jpg" />
+                      <a href="https://iryouworker.com/">医療ワーカー</a>
+                    </td>
+                    <td>
+                      <img class="cp-tab01__table_hyouka_img" src="img/hoshi4.5.jpg" />
+                      <p>3.5</p>
+                    </td>
+                    <td>
+                      <img class="cp-tab01__table_kyuuzin_img" src="img/maru.jpg" />
+                      <p>60,000</p>
+                    </td>
+                    <td>
+                      <P><strong>年度内職</strong>のおすすめ求人多数</P>
+                    </td>
+                    <td>
+                      <a href="https://iryouworker.com/" class="btn koushiki">公式</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <!-- サービス内容タブ -->
+            <div class="cp-tab01__content" id="s2">
+              <p class="cp-text">サービス内容タブ</p>
+              <table class="cp-tab01__table">
+                <tr>
+                  <th>転職サイト名</th><th>オススメ度</th><th>求人数</th><th>特徴</th><th>公式サイト</th>
+                </tr>
+                <!-- サービス内容タブ1-1 -->
+                <tr>
+                  <td>
+                    <img class="cp-tab01__table_logo_img" src="img/banner_kangorool.jpg" />
+                    <a href="https://www.kango-roo.com/">看護roo!</a>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_hyouka_img" src="img/hoshi4.5.jpg" />
+                    <p>4.3</p>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_kyuuzin_img" src="img/maru.jpg" />
+                    <p>80,000</p>
+                  </td>
+                  <td>
+                    <P><strong>満足度No.1！</strong><br>あなたに合った求人が見つかる</P>
+                  </td>
+                  <td>
+                    <p><span>常勤のみ</span></p>
+                    <a href="https://www.kango-roo.com/" class="btn koushiki">公式</a>
+                  </td>
+                </tr>
+                <!-- サービス内容タブ1-2 -->
+                <tr>
+                  <td>
+                    <img class="cp-tab01__table_logo_img" src="img/banner_kangonoshigoto.jpg" />
+                    <a href="https://kango-oshigoto.jp/">看護のお仕事</a>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_hyouka_img" src="img/hoshi4.5.jpg" />
+                    <p>4.3</p>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_kyuuzin_img" src="img/maru.jpg" />
+                    <p>120,000</p>
+                  </td>
+                  <td>
+                    <P>登録者限定の<strong>非公開求人数がトップクラス</strong></P>
+                  </td>
+                  <td>
+                    <p><span>常勤のみ</span></p>
+                    <a href="https://kango-oshigoto.jp/" class="btn koushiki">公式</a>
+                  </td>
+                </tr>
+                <!-- サービス内容タブ1-3 -->
+                <tr>
+                  <td>
+                    <img class="cp-tab01__table_logo_img" src="img/banner_nursezinzai.jpg" />
+                    <a href="https://www.nursejinzaibank.com/">ナース人材バンク</a>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_hyouka_img" src="img/hoshi4.5.jpg" />
+                    <p>3.8</p>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_kyuuzin_img" src="img/maru.jpg" />
+                    <p>210,000</p>
+                  </td>
+                  <td>
+                    <P>常勤求人数No.1！<strong>すぐに転職したい</strong>方に</P>
+                  </td>
+                  <td>
+                    <p><span>常勤のみ</span></p>
+                    <a href="https://www.nursejinzaibank.com/" class="btn koushiki">公式</a>
+                  </td>
+                </tr>
+                <!-- サービス内容タブ1-4 -->
+                <tr>
+                  <td>
+                    <img class="cp-tab01__table_logo_img" src="img/banner_iryouworker.jpg" />
+                    <a href="https://iryouworker.com/">医療ワーカー</a>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_hyouka_img" src="img/hoshi4.5.jpg" />
+                    <p>3.5</p>
+                  </td>
+                  <td>
+                    <img class="cp-tab01__table_kyuuzin_img" src="img/maru.jpg" />
+                    <p>60,000</p>
+                  </td>
+                  <td>
+                    <P><strong>年度内職</strong>のおすすめ求人多数</P>
+                  </td>
+                  <td>
+                    <a href="https://iryouworker.com/" class="btn koushiki">公式</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+      </div>
+    </section>
+
+    <section class="section3">
+      <div class="section3_title serif">
+        <h2>転職を考えている場合は、<br>満足度の高い転職サイトの利用をお勧めします</h2>
+      </div>
+
+      <div class="section3_title_catch flex">
+        <p class="section3_catch_message">「失敗しない転職」のために看護師さんが利用して評判が高かった転職サイト上位〇〇社を紹介しています。<span class="orange">求人条件がいい人気の求人は一般的には非公開求人として登録者に斡旋</span>されています。転職サイトも数多くあり各社の人気求人獲得競争が激しいものになっているので、効率よく条件のいい求人を見つけるには<span class="orange">『看護roo』『看護のお仕事』『医療ワーカー』３社同時登録</span>し探される事をおすすめします。</p>
+          <img class="section3_icon" src="img/s3-kangoshi.jpg">
+        </div>
+      <div class="section3_value">
+        <div class="section3_leftbox">
+          <h3 class="section3_leftbox_title serif">好条件多数！<br class="sp-br">非公開求人は転職サイトだけ</h3>
+          <div class="section_img">
+            <img class="imgSP" src="img/s3-1.jpg">
+          </div>
+          <p class="section3_leftbox_text">近年、看護師の好条件求人は「非公開型」が主流になりつつあります。その理由は、<span class="orange">「年収600万円以上」や「年休120日以上」などの好条件求人には応募が殺到</span>し、通常業務に支障が出るためなんです。採用側としては極力負担を減らしたいわけですから、厳選した転職サイトのみ非公開求人として求人をかける、という流れになっているのです。</p>
+        </div>
+        <div class="section3_rightbox">
+          <img src="img/s3-1.jpg">
+        </div>
+      </div>
+      <div class="section3_value">
+        <div class="section3_leftbox">
+          <h3 class="section3_leftbox_title serif">自分では調査ができない<br class="sp-br">内部情報が聞ける！</h3>
+          <div class="section_img imgSP">
+            <img class="imgSP" src="img/s3-2.jpg">
+          </div>
+          <p class="section3_leftbox_text">看護師さんの転職理由の多くが、「人間関係」や「給与などの条件」などの不満がメインです。そんな不満が理由で転職したのに、「新しい職場もまた人間関係が悪かった」なんてことになったら最悪ですよね。しかし看護師転職サイトなら安心。<span class="orange">担当のアドバイザーが転職先の内部事情を調査</span>してくれるんです。</p>
+        </div>
+        <div class="section3_rightbox">
+          <img src="img/s3-2.jpg">
+        </div>
+      </div>
+      <div class="point">
+        <div class="point-title">ポイント</div>
+        <div class="point-box">
+          <h2>今がチャンス？<br class="sp-br"> まずは登録して求人確認！</h2>
+          <p>現在転職サイトでは対面ではなくオンラインでの相談や求人紹介、転職先との面談を実施しています。<br>対面よりも気軽かつ効率的に転職活動を進められ、ライバルも少ないので今が転職の狙い目です。</p>
+        </div>
+      </div>
+    </section>
+  <!--看護師転職サイトランキングBest5-->
+    <section class="section4" id="ranking">
+      <img class="section4_title"src="img/s4-title.png">
+      <div class="section4_title_catch flex">
+        <p class="section4_catch_message"><span class="orange">「あっちのサイトに登録しておけばもう少しお給料が高い求人があったのに・・・」</span>なんてことにならないように、<span class="orange">最低２サイトは登録して比較</span>するのが転職を成功させる大事なポイントです♪</p>
+        <img class="section4_icon" src="img/s4-1.jpg">
+      </div>
+
+  <!--サイトランキング１サイトのくくり-->
+  <!--ここから-->
+      <div class="search_valueBox">
+
+        <h3 class="search_valueBox_1stTitle"><span class="orange">サービス満足度No.1！業界トップクラスの求人数！</span></h3>
+
+        <div class="search_valueBox_2ndtitle flex">
+          <img class="oukan_img" src="img/oukan.jpg">
+          <h4>看護のお仕事</h4>
+          <img class="sougou_img" src="img/sougou1.jpg">
+        </div>
+
+        <div class="search_valueBox_1stValue flex">
+          <!--サイトバナー-->
+          <img class="valueBox_1stValue_img" src="img/banner_kangonoshigoto_square.jpg">
+          <!--説明-->
+          <div class="valueBox_1stValue_box">
+            <ul class="valueBox_1stValue_list">
+              <li>日本全国ほぼ<span class="pink">全ての事象所情報を網羅！</span>その数12万件！</li>
+              <li>人間関係や雰囲気など気になる<span class="pink">職場の内部事情</span>に詳しい！</li>
+              <li><span class="pink">給与や夜勤回数</span>などの待遇交渉を代わりにやってくれる！</li>
+            </ul>
+          <!--テーブル(表)-->
+            <div class="valueBox_ranking_table">
+              <table>
+                  <tr class="text-center">
+                    <th >求人件数</th><td>12万件</td><th>対応エリア</th><td>全国</td>
+                  </tr>
+                  <tr class="text-center">
+                    <th>非公開求人</th><td>あり</td><th>登録料</th><td>無料</td>
+                  </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!--SP用のテーブル(表)-->
+        <div class="valueBox_ranking_table_sp">
+          <table>
+              <tr class="text-center">
+                <th >求人件数</th><td>12万件</td><th>対応エリア</th><td>全国</td>
+              </tr>
+              <tr class="text-center">
+                <th>非公開求人</th><td>あり</td><th>登録料</th><td>無料</td>
+              </tr>
+          </table>
+        </div>
+        <!--条件-->
+        <div class="search_valueBox_2ndValue flex">
+          <p>対象:</p>
+          <div class="orange_box">常勤（夜勤あり）</div>
+          <div class="orange_box">常勤（日勤のみ）</div>
+          <div class="orange_box">常勤（非常勤）</div>
+          <div class="gray_box">派遣</div>
+          <div class="gray_box">バイト</div>
+        </div>
+
+        <!--ボタン-->
+        <img class="linemessage" src="img/search_linemessage.jpg">
+        <div class="btn_area">
+        <a href="" class="btn wordOfMouth">口コミを見る</a>
+        <a href="" class="btn official">公式ページへ</a>
+        </div>
+
+      </div>
+  <!--ここまで-->
+  <!--タイトルと吹き出し-->
+      <div class="title">
+        <h3>看護師転職サイトを使うメリット</h3>
+      </div>
+      <div class="section4_title_catch flex">
+        <img class="section4_icon" src="img/s8-3.jpg">
+        <p class="section_catch_message_r">「看護師転職サイトって使うメリットあるの？」<br>「ハローワークじゃダメなの？」</p>
+      </div>
+      <div class="section4_title_catch flex">
+        <p class="section_catch_message">そんな疑問をお持ちの方も多いと思います。<br>しかし、ハッキリ言って転職サイトは<span class="orange">「使わないと損」</span>なんです！<br>転職初心者の方や転職サイトをご利用のない方のために、どんなメリットがあるのかをご紹介します！</p>
+        <img class="section4_icon" src="img/s4-3.jpg">
+      </div>
+    </section>
+  <!--大きい写真の所-->
+    <section class="section5">
+      <div class="boxTitle">
+        <h3>看護師転職サイトを使う３大メリット！</h3>
+      </div>
+      <div class="title">
+        <h3>病院内部の情報を事前に調査してくれる！</h3>
+      </div>
+      <img class="section5_img" src="img/marubatu.jpg">
+      <p class="section5_text">転職する際に最も不安なのが転職先の情報ですよね。<br>看護師長さんが目も合わせてくれない冷徹な人だったり、夜勤ばかり押し付けられて希望の日に休めない・・・。転職してからそんな事態をしったのではもはや<span class="orange">後の祭り</span>です。</p>
+    </section>
+
+  <!--満足度ランキングBest5-->
+    <section class="section6" id="job_ranking">
+      <img class="section6_title" src="img/s6-title.png">
+      <!--満足度ランキング１サイトのくくり-->
+      <div class="search_valueBox">
+
+        <h3 class="manzokusearch_valueBox_1stTitle"><span class="orange">サービス満足度No.1！業界トップクラスの求人数！</span></h3>
+
+        <div class="search_valueBox_2ndtitle flex">
+          <img class="oukan_img" src="img/oukan.jpg">
+          <h4>看護のお仕事</h4>
+          <img class="sougou_img" src="img/sougou1.jpg">
+        </div>
+
+        <div class="search_valueBox_1stValue flex">
+          <!--サイトバナー-->
+          <img class="valueBox_1stValue_img" src="img/banner_kangonoshigoto_square.jpg">
+          <!--説明-->
+          <div class="valueBox_1stValue_box">
+            <ul class="valueBox_1stValue_list">
+              <li>日本全国ほぼ<span class="pink">全ての事象所情報を網羅！</span>その数12万件！</li>
+              <li>人間関係や雰囲気など気になる<span class="pink">職場の内部事情</span>に詳しい！</li>
+              <li><span class="pink">給与や夜勤回数</span>などの待遇交渉を代わりにやってくれる！</li>
+            </ul>
+          <!--テーブル-->
+            <div class="valueBox_ranking_table">
+              <table>
+                  <tr class="text-center">
+                    <th >求人件数</th><td>12万件</td><th>対応エリア</th><td>全国</td>
+                  </tr>
+                  <tr class="text-center">
+                    <th>非公開求人</th><td>あり</td><th>登録料</th><td>無料</td>
+                  </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!--テーブルSP-->
+        <div class="valueBox_ranking_table_sp">
+          <table>
+              <tr class="text-center">
+                <th >求人件数</th><td>12万件</td><th>対応エリア</th><td>全国</td>
+              </tr>
+              <tr class="text-center">
+                <th>非公開求人</th><td>あり</td><th>登録料</th><td>無料</td>
+              </tr>
+          </table>
+        </div>
+        <!--条件-->
+        <div class="search_valueBox_2ndValue flex">
+          <p>対象:</p>
+          <div class="orange_box">常勤（夜勤あり）</div>
+          <div class="orange_box">常勤（日勤のみ）</div>
+          <div class="orange_box">常勤（非常勤）</div>
+          <div class="gray_box">派遣</div>
+          <div class="gray_box">バイト</div>
+        </div>
+
+        <!--ボタン-->
+        <img class="linemessage" src="img/search_linemessage.jpg">
+        <div  class="btn_area">
+        <a href="" class="btn wordOfMouth">口コミを見る</a>
+        <a href="" class="btn official">公式ページへ</a>
+        </div>
+
+      </div>
+  <!--ここまで-->
+    </section>
+    <section class="section7">
+      <div class="boxTitle">
+        <h3>早わかり！看護師転職サイト一覧</h3>
+      </div>
+      <p class="itiran_text">編集部が独自の調査で主要看護師転職サイトの特徴を調査し、一覧表にしました。<br>お好みの項目で並べ替えや検索が可能です！</p>
+      <div id="sitetable" class="bg-gray-100 flex-1 p-6 md:mt-16">
+        <div class="search_box flex">
+          <p>検索:</p><input class="search p-3 flex-1" placeholder="Search" />
+        </div>
+        <table class="table-auto w-full text-left">
+          <thead>
+            <tr>
+              <th class="sort px-6 py-2 border-r" data-sort="name">サイト名</th>
+              <th class="sort px-4 py-2 border-r" data-sort="kensuu">求人件数</th>
+              <th class="sort px-4 py-2 border-r" data-sort="area">対応エリア</th>
+              <th class="sort px-2 py-2 border-r" data-sort="hikoukai">非公開求人</th>
+              <th class="sort px-2 py-2 border-r" data-sort="haken">派遣</th>
+            </tr>
+          </thead>
+          <tbody class="list text-gray-600">
+            <tr>
+              <td class="name border border-l-0 px-6 py-2">看護のお仕事</td>
+              <td class="kensuu border border-l-0 px-4 py-2">12000</td>
+              <td class="area border border-l-0 px-4 py-2">全国</td>
+              <td class="hikoukai border border-l-0 px-4 py-2">あり</td>
+              <td class="haken border border-l-0 px-4 py-2">なし</td>
+            </tr>
+            <tr>
+              <td class="name border border-l-0 px-6 py-2">マイナビ看護師</td>
+              <td class="kensuu border border-l-0 px-4 py-2">50000</td>
+              <td class="area border border-l-0 px-4 py-2">全国</td>
+              <td class="hikoukai border border-l-0 px-4 py-2">あり</td>
+              <td class="haken border border-l-0 px-4 py-2">なし</td>
+            </tr>
+            <tr>
+                <td class="name border border-l-0 px-6 py-2">ナースではたらこ</td>
+                <td class="kensuu border border-l-0 px-4 py-2">100000</td>
+                <td class="area border border-l-0 px-4 py-2">全国</td>
+                <td class="hikoukai border border-l-0 px-4 py-2">あり</td>
+                <td class="haken border border-l-0 px-4 py-2">なし</td>
+            </tr>
+            <tr>
+                <td class="name border border-l-0 px-4 py-2">看護のお仕事派遣</td>
+                <td class="kensuu border border-l-0 px-4 py-2">5000</td>
+                <td class="area border border-l-0 px-4 py-2">関東・関西・東海</td>
+                <td class="hikoukai border border-l-0 px-4 py-2">あり</td>
+                <td class="haken border border-l-0 px-4 py-2">あり</td>
+            </tr>
+            <tr>
+                <td class="name border border-l-0 px-4 py-2">MC-ナースネット</td>
+                <td class="kensuu border border-l-0 px-4 py-2">17000</td>
+                <td class="area border border-l-0 px-4 py-2">全国</td>
+                <td class="hikoukai border border-l-0 px-4 py-2">あり</td>
+                <td class="haken border border-l-0 px-4 py-2">あり</td>
+            </tr>
+            <tr>
+              <td class="name border border-l-0 px-4 py-2">パソナメディカル</td>
+              <td class="kensuu border border-l-0 px-4 py-2">670</td>
+              <td class="area border border-l-0 px-4 py-2">全国</td>
+              <td class="hikoukai border border-l-0 px-4 py-2">あり</td>
+              <td class="haken border border-l-0 px-4 py-2">なし</td>
+            </tr>
+            <tr>
+                <td class="name border border-l-0 px-4 py-2">ジョブデポ看護師</td>
+                <td class="kensuu border border-l-0 px-4 py-2">170000</td>
+                <td class="area border border-l-0 px-4 py-2">全国</td>
+                <td class="hikoukai border border-l-0 px-4 py-2">あり</td>
+                <td class="haken border border-l-0 px-4 py-2">なし</td>
+            </tr>
+            <tr>
+                <td class="name border border-l-0 px-4 py-2">ナースジョブ</td>
+                <td class="kensuu border border-l-0 px-4 py-2">24000</td>
+                <td class="area border border-l-0 px-4 py-2">関西など</td>
+                <td class="hikoukai border border-l-0 px-4 py-2">あり</td>
+                <td class="haken border border-l-0 px-4 py-2">なし</td>
+            </tr>
+            <tr>
+                <td class="name border border-l-0 px-4 py-2">看護プロ</td>
+                <td class="kensuu border border-l-0 px-4 py-2">5000</td>
+                <td class="area border border-l-0 px-4 py-2">全国</td>
+                <td class="hikoukai border border-l-0 px-4 py-2">なし</td>
+                <td class="haken border border-l-0 px-4 py-2">あり</td>
+            </tr>
+            <tr>
+              <td class="name border border-l-0 px-4 py-2">ナース・ジャスト・ジョブ</td>
+              <td class="kensuu border border-l-0 px-4 py-2">37000</td>
+              <td class="area border border-l-0 px-4 py-2">全国</td>
+              <td class="hikoukai border border-l-0 px-4 py-2">なし</td>
+              <td class="haken border border-l-0 px-4 py-2">なし</td>
+          </tr>
+          <tr>
+              <td class="name border border-l-0 px-4 py-2">ナースエージェント</td>
+              <td class="kensuu border border-l-0 px-4 py-2">40000</td>
+              <td class="area border border-l-0 px-4 py-2">全国</td>
+              <td class="hikoukai border border-l-0 px-4 py-2">なし</td>
+              <td class="haken border border-l-0 px-4 py-2">あり</td>
+          </tr>
+          <tr>
+              <td class="name border border-l-0 px-4 py-2">JobMedley</td>
+              <td class="kensuu border border-l-0 px-4 py-2">26000</td>
+              <td class="area border border-l-0 px-4 py-2">全国</td>
+              <td class="hikoukai border border-l-0 px-4 py-2">なし</td>
+              <td class="haken border border-l-0 px-4 py-2">なし</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="section8">
+      <div class="boxTitle">
+        <h3>看護師転職お役立ち情報</h3>
+      </div>
+      <div class="section8_valueBox flex">
+        <div class="section8_value flex">
+          <div>
+            <img class="section8_icon" src="img/s8-1.jpg">
+          </div>
+          <div class="section8_value_text">
+            <h5 class="pink">転職サイトのメリットは？</h5>
+            <p class="gray">「看護地転職サイトって使うメリットはあるの？」はっきり言って使わなきゃ損なんです！様々なメリットをお伝えします。</p>
+          </div>
+        </div>
+        <div class="section8_value flex">
+          <div>
+            <img class="section8_icon" src="img/s8-2.jpg">
+          </div>
+          <div class="section8_value_text">
+            <h5 class="pink">転職サイト選びのポイント</h5>
+            <p class="gray">看護地転職サイトが他だくさんあってどれが良いかわからない・・・。そんなあなたのために失敗しない転職サイト選びを教えます。</p>
+          </div>
+        </div>
+        <div class="section8_value flex">
+          <div>
+            <img class="section8_icon" src="img/s8-3.jpg">
+          </div>
+          <div class="section8_value_text">
+            <h5 class="pink">看護師転職サイトQ&A</h5>
+            <p class="gray">初めての転職で不安な方や素朴な疑問をお持ちの方のために、看護師転職サイトに関するよくある質問をQ&A形式でご紹介します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <img class="footer_cover" src="img/footer1.png">
+      <div class="footer_link">
+        <a href="#">ホーム</a>
+        <a href="#">運営者情報</a>
+        <a href="#">ランキングについて</a>
+        <a href="#">プライバシーポリシー</a>
+      </div>
+      <p>Copyright 2018-2022 <br class="sp-br">看護師転職サイトランキング All Right Reserved</p>
+    </footer>
+  </div>
+
+ <!--jsファイル読み込み-->
+ <script type="text/javascript" src="js/search-js.js"></script>
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script type="text/javascript" src="js/check-js.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+ <script type="text/javascript" src="js/switch-js.js"></script>
+ <script type="text/javascript" src="js/scroll-js.js"></script>
+ <script>
+  var options = {
+    valueNames: ['name', 'kensuu', 'area', 'hikoukai', 'haken']
+  };
+
+  var userList = new List('sitetable', options);
+
+  userList.sort('id', { order: 'asc' });
+ </script>
+ </body>
+</html>

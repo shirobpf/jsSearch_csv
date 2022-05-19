@@ -1,0 +1,286 @@
+@media screen and (max-width: 680px){
+    * {
+        -webkit-appearance: none;
+    }
+
+    .rapper {
+        width:100%;
+        overflow-x: hidden !important;
+        box-sizing: border-box;
+        margin:0;
+    }
+
+    #feas-searchform-0{
+        margin-top: 50px;
+        width: 85%;
+        padding: 10px;
+    }
+    .searchFormTable{
+        margin: 0 auto;
+    }
+    .btn, a.btn {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .cp-tab01,
+    .cp-tab02,
+    .cp-tab03{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .cp-tab01__content,
+    .cp-tab02__content,
+    .cp-tab03__content {
+        padding: 20px 5px 16px;
+    }
+
+    .cp-tab01 input:checked + .cp-tab01__item {
+        font-size: 0.9rem;
+        bottom: 9px;
+    }
+    .cp-tab01__item,
+    .cp-tab02__item,
+    .cp-tab03__item{
+        font-size: 0.8rem;
+        margin: 8px -2px 0 0;
+    }
+    .cp-tab-box {
+        border-bottom: 20px solid #fd80aa;
+    }
+    .cp-tab01__table_logo_img{ width: 95%;}
+    .cp-tab01__table_hyouka_img{ width: 70%;}
+    .cp-tab01__table_kyuuzin_img{ width: 35%;}
+
+    .cp-tab01__table p,
+    .cp-tab02__table p,
+    .cp-tab03__table p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+        padding: 0 0px;
+    }
+    .cp-tab01__table th,
+    .cp-tab01__table td{
+        font-size:0.9rem;
+        padding: 10px 0px;
+    }
+    .cp-tab01__table a,
+    .cp-tab02__table a,
+    .cp-tab03__table a{
+        font-size:0.8rem;
+    }
+
+    #feas-searchform-0 th,
+    #feas-searchform-0 td{
+        width: 95%;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .table_column{
+        display: block;
+        margin: 0 auto;
+    }
+    #feas-submit-button-0{
+        width: 80%;
+    }
+
+    .section3_leftbox{
+        width: 100%;
+    }
+    .imgSP{
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .section3_rightbox{
+        display: none;
+    }
+    .section3_title {
+        font-size: 1.25rem;
+        padding: 15px 10px;
+    }
+    .section3_title_catch{
+        margin: 30px 5px;
+        align-items: left;
+    }
+    .section3_catch_message {
+        width: 100%;
+        justify-content: center;
+        text-align: left;
+        line-height: 1.5;
+        padding: 10px;
+    }
+    .section3_title_catch img{
+        display: none;
+    }
+    .section3_value{
+        padding: 30px 5px;
+    }
+    .section4, .section5, .section6, .section7, .section8 {
+        padding: 40px 10px;
+    }
+
+    .section4_icon {
+        height: 80px;
+        margin: 5px 5px;
+    }
+    .title{
+        font-size:1.4rem;
+        margin-top: 50px;
+    }
+
+    .oukan_img{width: 10%;}
+    .sougou_img{width: 35%;}
+    .search_valueBox_1stTitle,
+    .manzokusearch_valueBox_1stTitle{
+        font-size: 0.8rem;
+    }
+    .search_valueBox_2ndtitle {
+        font-size: 1.5rem;
+    }
+    .valueBox_1stValue_list {
+        font-size: 0.8rem;
+    }
+    .valueBox_1stValue_img {
+        width: 35%;
+    }
+    .valueBox_1stValue_box {
+        margin-top: 5px;
+        margin-left: -3px;
+        width: 65%;
+    }
+    .valueBox_ranking_table{
+        display: none;
+    }
+    .valueBox_ranking_table_sp{
+        display: block;
+    }
+
+    .valueBox_ranking_table table{
+        width:100%;
+        margin-top: 10px;
+    }
+
+    .valueBox_ranking_table_sp table th{
+        background: #fd80aa;
+    }
+
+    .valueBox_ranking_table_sp table th,
+    .valueBox_ranking_table_sp table td{
+        width: 10%;
+        display: revert;
+        font-size: 0.8rem;
+    }
+    .search_valueBox_2ndValue p {
+        font-size: 0.9rem;
+    }
+    .search_valueBox_2ndValue {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    .section4_catch_message{
+        font-size: 0.8rem;
+    }
+
+    .section3_leftbox_title{
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    .point-box {
+        padding: 10px 5px;
+    }
+    .point-box h2 {
+        padding: 5px;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    .point-box p {
+        font-size: 1rem;
+    }
+
+    .section3,.section4{
+        padding: 30px 5px;
+    }
+    .boxTitle{
+        font-size: 1.5rem;
+    }
+
+    .search_box {
+        position: relative;
+        margin: 10px 0;
+        text-align: right;
+        justify-content: center;
+    }
+
+    .section_catch_message_r,
+    .section_catch_message{
+        width: 60%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .section5_text{
+        font-size: 1rem;
+    }
+
+    .section8_valueBox {
+        padding: 5px 0;
+    }
+    .section8_value_text {
+        width: 100%;
+        margin: 0 10px;
+    }
+    .footer_link a{
+        display: inline-block;
+        margin-bottom: 5px;
+        border: none;
+        border-bottom: 1px #fff solid;
+    }
+    .footer_link a:first-of-type {
+        border-left: none;
+    }
+    .footer_cover{
+        width: 100%;
+    }
+    footer{
+        margin-bottom: 70px;
+    }
+
+    /*サブページ用*/
+    .boxTitle_sub{
+        margin: 20px 20px;
+        padding:15px;
+        border: 2px solid #fad4df;
+        border-left: unset;
+        border-right: unset;
+        font-size: 2rem;
+        font-weight: bold;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .section_title_catch {
+        margin: 20px 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .section_icon_l {
+        margin-right: 10px;
+        height: 80px;
+    }
+    .section_icon_r {
+        margin-left: 10px;
+        height: 80px;
+    }
+    .right-nav{
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    .cp-header01__items{
+        justify-content: center;
+    }
+}

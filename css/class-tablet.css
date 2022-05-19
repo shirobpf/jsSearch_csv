@@ -1,0 +1,203 @@
+@media screen and (max-width: 1200px){
+
+    header{
+        width: 100%;
+        margin:0 auto;
+        background-color: #fdfdfd;
+    }
+    .cp-header01 {
+        padding: 10px 10px;
+    }
+    .cp-header01__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .sp-br{
+        display: block;
+    }
+
+    .pc-br{
+        display: none;
+    }
+    .btn, a.btn{
+        display: block;
+        font-size: 1.1rem;
+        padding: 1rem 1rem;
+    }
+    .btn_area{
+        display: flex;
+    }
+
+    .rapper{
+        width: 100%;
+        margin:0 auto;
+        text-align: center;
+        background-color: #fdfdfd;
+    }
+
+    a.wordOfMouth,a.official{
+        width: 80%;
+    }
+
+    .search_area{
+        padding:0px;
+        padding-bottom: 30px;
+        background: repeating-linear-gradient(
+            135deg, #f2e0ed 0px,  #f2e0ed 5px, #fdfdfd 6px, #fdfdfd 11px);
+        margin-bottom: 50px;
+    }
+
+    .search_area_cover{
+        position: relative;
+        display:flex;
+        width: 100%;
+        height:auto;
+        margin-left: 0;
+        margin-right: 0;
+        background: #fdfdfdbb;
+        background-image: none;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+    }
+
+
+    .topbanner{
+        position: relative;
+    }
+    .sp-top1{
+        position: relative;
+        display: block;
+        width: 100vw;
+        margin: 0 auto;
+        z-index: 5;
+    }
+
+    .sp-top2{
+        position: absolute;
+        display: block;
+        width: 100vw;
+        margin: -0.1px auto;
+        z-index: 6;
+    }
+    .search_area_left{
+        width: 100vw;
+    }
+
+    #feas-searchform-0{
+        position: relative;
+        width: 375px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding: 15px;
+        background: #fdfdfd;
+        border-radius: 2mm;
+        z-index: 10;
+    }
+
+    .cp-tab01{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .section3{
+        padding: 80px 10px;
+    }
+
+    .section3_title{
+        font-size: 1.7rem;
+        padding: 15px 20px;
+    }
+    .point-box{
+        padding: 10px 20px;
+    }
+
+    .section4, .section5, .section6, .section7, .section8 {
+        background-color: #fdfdfd;
+        padding: 80px 10px;
+    }
+    .section4_title,.section6_title{
+        width: 100%;
+    }
+    .section4_title_catch {
+        margin: 30px 10px;
+    }
+    .section4_icon {
+        height: 100px;
+        margin: 30px 10px;
+    }
+    .search_valueBox{
+        padding: 10px;
+    }
+    .valueBox_1stValue_img {
+        width: 48%;
+    }
+    .valueBox_1stValue_box {
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 47%;
+    }
+    .search_valueBox_2ndValue {
+        align-items: center;
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    .search_valueBox_2ndValue p{
+        font-size: 1.2rem;
+    }
+    .linemessage{
+        width: 70%;
+    }
+
+    .section8_value{
+        width: 100%;
+    }
+    .nav_img{
+        margin: 0 auto;
+    }
+
+}
+@media screen and (max-width: 850px){
+    .subpage-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .right-nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pc-img{display: none;}
+    .sp-img{display: inline-block;;}
+    .cp-header01__container{display: none;}
+    .cp-header02__container{display: block;}
+
+    .cp-header02__container{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left:0;
+        padding: 5px 0 15px;
+        width: auto;
+        background-color: #fd80aa;
+        border: 1px solid #fd80aa;
+        z-index: 99;
+        width: 100vw;
+        border-left: none;
+        border-top: 2px solid #fdfdfd;
+
+    }
+    .cp-header01__item_icon p{
+        color:#fdfdfd;
+    }
+    .cp-header01__item>a>p{
+        display: none;
+    }
+    .cp-header01__item_icon{
+        display: block;
+    }
+    .cp-header01__item{
+        width: 32%;
+    }
+    .cp-header01__item:not(:last-child) {
+        margin-right: 0px;
+    }
+}
